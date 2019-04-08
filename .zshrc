@@ -2,13 +2,14 @@ export ZSH="/home/qrchack/.oh-my-zsh"
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="robbyrussell"
+#ZSH_THEM="nicoulaj"
 
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
-# ENABLE_CORRECTION="true"
-# COMPLETION_WAITING_DOTS="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
@@ -25,13 +26,15 @@ plugins=(
 	python
 	sudo
 	tmux
+	zsh-completions
 	zsh-syntax-highlighting
+	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
 
 function cld {
-	builtin cd "$@" && ls -F
+	builtin cd "$@" && ls -Fh
 }
 
 export EDITOR=nano
