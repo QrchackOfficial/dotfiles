@@ -1,6 +1,6 @@
-export ZSH="/home/qrchack/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
-ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="robbyrussell"
 #ZSH_THEM="nicoulaj"
 
