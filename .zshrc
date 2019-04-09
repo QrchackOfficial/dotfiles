@@ -68,6 +68,7 @@ export LESS=-R
 
 alias .='ls -Fh'
 alias .a='ls -FHA'
+alias .al='ls -FHAl'
 alias ..='cd ..'
 
 export LESS_TERMCAP_mb=$'\E[1;31m'		# begin bold
