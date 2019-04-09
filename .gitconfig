@@ -1,7 +1,0 @@
-[user]
-	name = Arkadiusz Rozmus
-	email = qrchackofficial@gmail.com
-[color]
-	ui = true
-[core]
-	pager = less -r
