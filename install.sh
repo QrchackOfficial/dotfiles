@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # cd to dotfiles
-HERE=$(cd $(dirname "$BASH_SOURCE"); pwd)
-cd "$HERE"
+cd $(cd $(dirname "$BASH_SOURCE"); pwd)
 
 # change shell to zsh, if exists
 chsh -s $(grep /zsh$ /etc/shells | tail -1)
